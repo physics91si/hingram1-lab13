@@ -13,13 +13,13 @@ class CalcTest(unittest.TestCase):
         self.assertEqual(calc.calc('1+1'), 2)
 
     def testSubtraction(self):
-        pass
+        self.assertEqual(calc.calc('1-1'), 0)
 
-    def testMultiplciation(self):
-        pass
+    def testMultiplication(self):
+        self.assertEqual(calc.calc('6*3'), 18) 
  
     def testDivision(self):
-        pass
+        self.assertEqual(calc.calc('6/2'), 3)
 
 if __name__ == '__main__':
     unittest.main()
